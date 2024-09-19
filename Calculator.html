@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Calculator.css">
+    
+</head>
+<body>
+    <div class="body_container">
+        <div class="calcu_container">
+            <div class="partition1"><div class="calculator_text"></div></div>
+            <div class="partition2" id="result">
+              <!-- display the clicked numbers -->
+               0
+            </div>
+            <!-- partion 3 to display the numbers and mathematical operation -->
+            <div class="partition3">
+               <div class="row">
+                <div class="button gray" onclick="getEmpty()">AC</div>
+                <div class="button gray" onclick="getNegative()">+/-</div>
+                <div class="button gray" onclick="getNumber('%')">%</div>
+                <div class="button gray" onclick="getNumber('/')">÷</div>
+               </div>
+               <div class="row">
+                <div  class="button" onclick="getNumber('7')">7</div>
+                <div   class="button" onclick="getNumber('8')">8</div>
+                <div  class="button" onclick="getNumber('9')">9</div> 
+                <div  class="button ornage" onclick="getNumber('*')">×</div>
+               </div>
+               <div class="row">
+                <div  class="button" onclick="getNumber('4')">4</div>
+                <div class="button" onclick="getNumber('5')" >5</div>
+                <div class="button" onclick="getNumber('6')" >6</div>
+                <div class="button ornage" onclick="getNumber('-')">-</div>
+               </div>
+               <div class="row">
+                <div class="button" onclick="getNumber('1')">1</div>
+                <div class="button" onclick="getNumber('2')" >2</div>
+                <div class="button" onclick="getNumber('3')">3</div>
+                <div class="button ornage" onclick="getNumber('+')">+</div>
+               </div>
+               <div class="row">
+                <div class="button zero" onclick="getNumber(0)">0</div>
+                <div  class="button" onclick="getNumber('.')" >.</div>
+                <div  class="button ornage" onclick="getResult()" >=</div>
+               </div>
+            </div>
+        </div>
+    </div>
+<!-- ....................................java Script.................................. -->
+   <script src="Calculator.js"></script>
+</body>
+</html>
